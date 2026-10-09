@@ -60,6 +60,8 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOriginPatterns(List.of(
                 allowedOrigins,
+                "https://*.vercel.app",
+                "https://medifind-frontend-khaki.vercel.app",
                 "http://localhost:*",
                 "http://127.0.0.1:*",
                 "http://localhost:5173",
