@@ -930,6 +930,305 @@ public class DataSeeder implements CommandLineRunner {
                 .prescriptionRequired(false)
                 .composition("Magaldrate 480mg + Simethicone 20mg")
                 .description("Gelusil MPS is a chewable antacid tablet that quickly neutralises acid and relieves bloating and flatulence. Mint-flavoured. Safe for pregnant women.")
+                .build(),
+
+            // ════════════ PENICILLIN & CLASSIC ANTIBIOTICS ════════════
+            Medicine.builder().name("Penicillin V 500mg").genericName("Phenoxymethylpenicillin")
+                .brandName("Phenoxymethylpenicillin").manufacturer("Alkem Laboratories Ltd")
+                .category("Antibiotics").dosageForm("Tablet").strength("500mg").packSize("10 Tablets")
+                .prescriptionRequired(true)
+                .composition("Phenoxymethylpenicillin Potassium IP equivalent to Penicillin V 500mg")
+                .description("Penicillin V is an oral penicillin antibiotic used for streptococcal throat infections, dental abscesses, skin infections and pneumococcal prophylaxis. The original classic antibiotic discovered by Alexander Fleming.")
+                .build(),
+
+            Medicine.builder().name("Ampicillin 500mg").genericName("Ampicillin Trihydrate")
+                .brandName("Ampicillin").manufacturer("IDPL (Indian Drugs & Pharmaceuticals Ltd)")
+                .category("Antibiotics").dosageForm("Capsule").strength("500mg").packSize("10 Capsules")
+                .prescriptionRequired(true)
+                .composition("Ampicillin Trihydrate IP equivalent to Ampicillin 500mg")
+                .description("Ampicillin is a broad-spectrum penicillin antibiotic for respiratory tract infections, UTI, meningitis, typhoid fever and skin infections. Effective against both gram-positive and gram-negative bacteria.")
+                .build(),
+
+            Medicine.builder().name("Cloxacillin 500mg").genericName("Cloxacillin Sodium")
+                .brandName("Cloxacillin").manufacturer("Cipla Ltd")
+                .category("Antibiotics").dosageForm("Capsule").strength("500mg").packSize("10 Capsules")
+                .prescriptionRequired(true)
+                .composition("Cloxacillin Sodium IP equivalent to Cloxacillin 500mg")
+                .description("Cloxacillin is a penicillinase-resistant penicillin antibiotic for staphylococcal infections including boils, cellulitis, osteomyelitis and post-operative wound infections. Effective against MSSA.")
+                .build(),
+
+            Medicine.builder().name("Chloramphenicol 250mg").genericName("Chloramphenicol")
+                .brandName("Chloromycetin").manufacturer("Pfizer Ltd")
+                .category("Antibiotics").dosageForm("Capsule").strength("250mg").packSize("10 Capsules")
+                .prescriptionRequired(true)
+                .composition("Chloramphenicol IP 250mg")
+                .description("Chloromycetin (Chloramphenicol) is a broad-spectrum antibiotic reserved for serious infections like typhoid fever, meningitis and rickettsial infections when other antibiotics are unsuitable. Bacteriostatic.")
+                .build(),
+
+            Medicine.builder().name("Vancomycin 500mg Injection").genericName("Vancomycin Hydrochloride")
+                .brandName("Vancocin").manufacturer("Eli Lilly India")
+                .category("Antibiotics").dosageForm("Injection").strength("500mg").packSize("1 Vial")
+                .prescriptionRequired(true)
+                .composition("Vancomycin Hydrochloride equivalent to Vancomycin 500mg")
+                .description("Vancomycin is a glycopeptide antibiotic of last resort for MRSA, C. difficile colitis, endocarditis and serious gram-positive infections resistant to other antibiotics. IV administration required.")
+                .build(),
+
+            Medicine.builder().name("Tetracycline 250mg").genericName("Tetracycline Hydrochloride")
+                .brandName("Tetracycline").manufacturer("Intas Pharmaceuticals Ltd")
+                .category("Antibiotics").dosageForm("Capsule").strength("250mg").packSize("10 Capsules")
+                .prescriptionRequired(true)
+                .composition("Tetracycline Hydrochloride IP 250mg")
+                .description("Tetracycline is a broad-spectrum antibiotic for acne, chlamydia, mycoplasma infections, rosacea and Helicobacter pylori eradication. Avoid in children under 8 years and during pregnancy.")
+                .build(),
+
+            Medicine.builder().name("Erythromycin 500mg").genericName("Erythromycin")
+                .brandName("Erythrocin").manufacturer("Abbott India Ltd")
+                .category("Antibiotics").dosageForm("Tablet").strength("500mg").packSize("10 Tablets")
+                .prescriptionRequired(true)
+                .composition("Erythromycin Stearate IP equivalent to Erythromycin 500mg")
+                .description("Erythrocin (Erythromycin) is a macrolide antibiotic for respiratory tract infections, skin infections, chlamydia and whooping cough. Safe in penicillin-allergic patients.")
+                .build(),
+
+            Medicine.builder().name("Ceftriaxone 1g Injection").genericName("Ceftriaxone Sodium")
+                .brandName("Monocef").manufacturer("Aristo Pharmaceuticals Pvt Ltd")
+                .category("Antibiotics").dosageForm("Injection").strength("1g").packSize("1 Vial")
+                .prescriptionRequired(true)
+                .composition("Ceftriaxone Sodium equivalent to Ceftriaxone 1g")
+                .description("Monocef (Ceftriaxone) is a 3rd-generation cephalosporin antibiotic for pneumonia, meningitis, typhoid, UTI, gonorrhoea and septicaemia. Given once daily IV or IM.")
+                .build(),
+
+            Medicine.builder().name("Cefixime 200mg").genericName("Cefixime Trihydrate")
+                .brandName("Taxim-O").manufacturer("Alkem Laboratories Ltd")
+                .category("Antibiotics").dosageForm("Tablet").strength("200mg").packSize("10 Tablets")
+                .prescriptionRequired(true)
+                .composition("Cefixime Trihydrate equivalent to Cefixime 200mg")
+                .description("Taxim-O (Cefixime) is a 3rd-generation oral cephalosporin for ear infections, UTI, pharyngitis, tonsillitis, bronchitis and uncomplicated gonorrhoea.")
+                .build(),
+
+            Medicine.builder().name("Levofloxacin 500mg").genericName("Levofloxacin")
+                .brandName("Levaquin").manufacturer("Dr. Reddy's Laboratories Ltd")
+                .category("Antibiotics").dosageForm("Tablet").strength("500mg").packSize("5 Tablets")
+                .prescriptionRequired(true)
+                .composition("Levofloxacin Hemihydrate IP equivalent to Levofloxacin 500mg")
+                .description("Levofloxacin is a fluoroquinolone antibiotic for community-acquired pneumonia, sinusitis, UTI and skin infections. Broad-spectrum once-daily antibiotic.")
+                .build(),
+
+            Medicine.builder().name("Meropenem 1g Injection").genericName("Meropenem Trihydrate")
+                .brandName("Meronem").manufacturer("AstraZeneca India Ltd")
+                .category("Antibiotics").dosageForm("Injection").strength("1g").packSize("1 Vial")
+                .prescriptionRequired(true)
+                .composition("Meropenem Trihydrate equivalent to Meropenem 1g")
+                .description("Meronem (Meropenem) is a carbapenem antibiotic for serious hospital-acquired infections, febrile neutropenia, meningitis and multi-drug resistant organisms. Reserved for severe cases.")
+                .build(),
+
+            // ════════════ ANTI-TUBERCULOSIS ════════════
+            Medicine.builder().name("Rifampicin 450mg").genericName("Rifampicin")
+                .brandName("Rifadin").manufacturer("Lupin Ltd")
+                .category("Anti-Tuberculosis").dosageForm("Capsule").strength("450mg").packSize("60 Capsules")
+                .prescriptionRequired(true)
+                .composition("Rifampicin IP 450mg")
+                .description("Rifadin (Rifampicin) is a key first-line anti-tuberculosis drug used in combination therapy for TB and leprosy. Turns body fluids orange-red. Take on empty stomach.")
+                .build(),
+
+            Medicine.builder().name("Isoniazid 300mg").genericName("Isoniazid")
+                .brandName("Isokin").manufacturer("Lupin Ltd")
+                .category("Anti-Tuberculosis").dosageForm("Tablet").strength("300mg").packSize("100 Tablets")
+                .prescriptionRequired(true)
+                .composition("Isoniazid IP 300mg")
+                .description("Isoniazid (INH) is a first-line anti-TB drug used with Rifampicin and Pyrazinamide. Also used for latent TB prophylaxis. Supplement with Pyridoxine (Vit B6) to prevent neuropathy.")
+                .build(),
+
+            // ════════════ ANTI-MALARIAL ════════════
+            Medicine.builder().name("Chloroquine 250mg").genericName("Chloroquine Phosphate")
+                .brandName("Resochin").manufacturer("Bayer Zydus Pharma Pvt Ltd")
+                .category("Anti-Malarial").dosageForm("Tablet").strength("250mg").packSize("10 Tablets")
+                .prescriptionRequired(true)
+                .composition("Chloroquine Phosphate IP equivalent to Chloroquine base 150mg")
+                .description("Resochin (Chloroquine) treats and prevents malaria caused by P. vivax, P. malariae and sensitive P. falciparum strains. Also used in rheumatoid arthritis and lupus.")
+                .build(),
+
+            Medicine.builder().name("Hydroxychloroquine 200mg").genericName("Hydroxychloroquine Sulphate")
+                .brandName("Plaquenil").manufacturer("Ipca Laboratories Ltd")
+                .category("Anti-Malarial").dosageForm("Tablet").strength("200mg").packSize("10 Tablets")
+                .prescriptionRequired(true)
+                .composition("Hydroxychloroquine Sulphate IP equivalent to Hydroxychloroquine 155mg base")
+                .description("Hydroxychloroquine (HCQ) is used for malaria prophylaxis, rheumatoid arthritis and systemic lupus erythematosus (SLE). Less toxic than chloroquine.")
+                .build(),
+
+            Medicine.builder().name("Artemether + Lumefantrine 20+120mg").genericName("Artemether + Lumefantrine")
+                .brandName("Coartem").manufacturer("Novartis India Ltd")
+                .category("Anti-Malarial").dosageForm("Tablet").strength("20mg+120mg").packSize("24 Tablets")
+                .prescriptionRequired(true)
+                .composition("Artemether 20mg + Lumefantrine 120mg")
+                .description("Coartem (Artemether-Lumefantrine) is the WHO first-line treatment for uncomplicated falciparum malaria including chloroquine-resistant cases. 6-dose regimen over 3 days.")
+                .build(),
+
+            // ════════════ ANALGESICS - OPIOID ════════════
+            Medicine.builder().name("Tramadol 50mg").genericName("Tramadol Hydrochloride")
+                .brandName("Tramazac").manufacturer("Zydus Cadila")
+                .category("Analgesics & Antipyretics").dosageForm("Capsule").strength("50mg").packSize("10 Capsules")
+                .prescriptionRequired(true)
+                .composition("Tramadol Hydrochloride IP 50mg")
+                .description("Tramazac (Tramadol) is a centrally acting opioid-like analgesic for moderate to severe pain including post-operative pain, cancer pain and neuropathic pain.")
+                .build(),
+
+            // ════════════ MUSCULOSKELETAL & RHEUMATOLOGY ════════════
+            Medicine.builder().name("Methotrexate 2.5mg").genericName("Methotrexate")
+                .brandName("Folitrax").manufacturer("IPCA Laboratories Ltd")
+                .category("Musculoskeletal").dosageForm("Tablet").strength("2.5mg").packSize("10 Tablets")
+                .prescriptionRequired(true)
+                .composition("Methotrexate IP 2.5mg")
+                .description("Folitrax (Methotrexate) is a DMARD for rheumatoid arthritis, psoriatic arthritis and psoriasis. Taken weekly — NOT daily. Requires regular blood monitoring.")
+                .build(),
+
+            Medicine.builder().name("Colchicine 0.5mg").genericName("Colchicine")
+                .brandName("Colchicine").manufacturer("Sun Pharmaceutical Industries Ltd")
+                .category("Musculoskeletal").dosageForm("Tablet").strength("0.5mg").packSize("20 Tablets")
+                .prescriptionRequired(true)
+                .composition("Colchicine IP 0.5mg")
+                .description("Colchicine is the first-choice treatment for acute gout attacks and familial Mediterranean fever. Also used for pericarditis prevention. Start at first sign of flare.")
+                .build(),
+
+            Medicine.builder().name("Allopurinol 100mg").genericName("Allopurinol")
+                .brandName("Zyloric").manufacturer("GlaxoSmithKline Pharmaceuticals Ltd")
+                .category("Musculoskeletal").dosageForm("Tablet").strength("100mg").packSize("30 Tablets")
+                .prescriptionRequired(true)
+                .composition("Allopurinol IP 100mg")
+                .description("Zyloric (Allopurinol) is a xanthine oxidase inhibitor for long-term management of gout and hyperuricaemia. Reduces uric acid production. Do not use during acute gout attacks.")
+                .build(),
+
+            // ════════════ HAEMATOLOGY ════════════
+            Medicine.builder().name("Ferrous Sulphate 200mg").genericName("Ferrous Sulphate")
+                .brandName("Feosol").manufacturer("Mankind Pharma Ltd")
+                .category("Haematology").dosageForm("Tablet").strength("200mg").packSize("30 Tablets")
+                .prescriptionRequired(false)
+                .composition("Ferrous Sulphate IP 200mg (equivalent to elemental iron 65mg)")
+                .description("Feosol (Ferrous Sulphate) is used for iron deficiency anaemia and iron supplementation in pregnancy. Take on empty stomach with Vitamin C for best absorption.")
+                .build(),
+
+            Medicine.builder().name("Vitamin B12 Methylcobalamin 1000mcg").genericName("Methylcobalamin")
+                .brandName("Mecobalamin").manufacturer("Intas Pharmaceuticals Ltd")
+                .category("Haematology").dosageForm("Tablet").strength("1000mcg").packSize("30 Tablets")
+                .prescriptionRequired(false)
+                .composition("Methylcobalamin 1000mcg")
+                .description("Mecobalamin 1000mcg is an active form of Vitamin B12 for peripheral neuropathy, megaloblastic anaemia, B12 deficiency (especially in vegetarians) and diabetic neuropathy.")
+                .build(),
+
+            Medicine.builder().name("Warfarin 5mg").genericName("Warfarin Sodium")
+                .brandName("Warf").manufacturer("Cipla Ltd")
+                .category("Haematology").dosageForm("Tablet").strength("5mg").packSize("30 Tablets")
+                .prescriptionRequired(true)
+                .composition("Warfarin Sodium IP 5mg")
+                .description("Warf (Warfarin) is an anticoagulant for atrial fibrillation, DVT, pulmonary embolism and mechanical heart valves. Requires regular INR monitoring. Many drug/food interactions.")
+                .build(),
+
+            // ════════════ ENDOCRINOLOGY & STEROIDS ════════════
+            Medicine.builder().name("Prednisolone 5mg").genericName("Prednisolone")
+                .brandName("Wysolone").manufacturer("Pfizer Ltd")
+                .category("Hormones & Thyroid").dosageForm("Tablet").strength("5mg").packSize("30 Tablets")
+                .prescriptionRequired(true)
+                .composition("Prednisolone IP 5mg")
+                .description("Wysolone (Prednisolone) is an oral corticosteroid used for asthma, allergic reactions, autoimmune diseases (RA, SLE), inflammatory bowel disease and nephrotic syndrome.")
+                .build(),
+
+            Medicine.builder().name("Dexamethasone 0.5mg").genericName("Dexamethasone")
+                .brandName("Dexona").manufacturer("Zydus Cadila")
+                .category("Hormones & Thyroid").dosageForm("Tablet").strength("0.5mg").packSize("30 Tablets")
+                .prescriptionRequired(true)
+                .composition("Dexamethasone IP 0.5mg")
+                .description("Dexona (Dexamethasone) is a potent corticosteroid for severe allergic reactions, cerebral oedema, COVID-19 severe cases and adrenal insufficiency.")
+                .build(),
+
+            Medicine.builder().name("Glibenclamide 5mg").genericName("Glibenclamide")
+                .brandName("Daonil").manufacturer("Sanofi India Ltd")
+                .category("Anti-Diabetic").dosageForm("Tablet").strength("5mg").packSize("20 Tablets")
+                .prescriptionRequired(true)
+                .composition("Glibenclamide IP 5mg")
+                .description("Daonil (Glibenclamide) is a sulphonylurea oral hypoglycaemic for type 2 diabetes. Stimulates insulin secretion from pancreatic beta cells. Taken before meals.")
+                .build(),
+
+            // ════════════ NEUROLOGY ════════════
+            Medicine.builder().name("Phenytoin 100mg").genericName("Phenytoin Sodium")
+                .brandName("Dilantin").manufacturer("Pfizer Ltd")
+                .category("Psychiatry & Neurology").dosageForm("Tablet").strength("100mg").packSize("30 Tablets")
+                .prescriptionRequired(true)
+                .composition("Phenytoin Sodium BP 100mg")
+                .description("Dilantin (Phenytoin) is an antiepileptic for tonic-clonic (grand mal) and partial seizures. Requires therapeutic drug monitoring and careful dose adjustment.")
+                .build(),
+
+            Medicine.builder().name("Carbamazepine 200mg").genericName("Carbamazepine")
+                .brandName("Tegretol").manufacturer("Novartis India Ltd")
+                .category("Psychiatry & Neurology").dosageForm("Tablet").strength("200mg").packSize("10 Tablets")
+                .prescriptionRequired(true)
+                .composition("Carbamazepine IP 200mg")
+                .description("Tegretol (Carbamazepine) is an antiepileptic and mood stabiliser for epilepsy, trigeminal neuralgia and bipolar disorder. Requires periodic blood count and liver function monitoring.")
+                .build(),
+
+            Medicine.builder().name("Levodopa + Carbidopa 100+25mg").genericName("Levodopa + Carbidopa")
+                .brandName("Syndopa").manufacturer("Sun Pharmaceutical Industries Ltd")
+                .category("Psychiatry & Neurology").dosageForm("Tablet").strength("100mg+25mg").packSize("100 Tablets")
+                .prescriptionRequired(true)
+                .composition("Levodopa IP 100mg + Carbidopa IP 25mg")
+                .description("Syndopa is the gold-standard treatment for Parkinson's disease. Levodopa converts to dopamine in the brain; Carbidopa prevents peripheral conversion, reducing side effects.")
+                .build(),
+
+            // ════════════ CARDIOLOGY ════════════
+            Medicine.builder().name("Digoxin 0.25mg").genericName("Digoxin")
+                .brandName("Lanoxin").manufacturer("GlaxoSmithKline Pharmaceuticals Ltd")
+                .category("Cardiovascular").dosageForm("Tablet").strength("0.25mg").packSize("30 Tablets")
+                .prescriptionRequired(true)
+                .composition("Digoxin BP 0.25mg")
+                .description("Lanoxin (Digoxin) is a cardiac glycoside for atrial fibrillation, atrial flutter and heart failure. Narrow therapeutic index — monitor serum digoxin levels regularly.")
+                .build(),
+
+            Medicine.builder().name("Furosemide 40mg").genericName("Furosemide")
+                .brandName("Lasix").manufacturer("Sanofi India Ltd")
+                .category("Cardiovascular").dosageForm("Tablet").strength("40mg").packSize("30 Tablets")
+                .prescriptionRequired(true)
+                .composition("Furosemide IP 40mg")
+                .description("Lasix (Furosemide) is a powerful loop diuretic for oedema (heart failure, liver cirrhosis, nephrotic syndrome) and hypertension. Rapid onset. Monitor electrolytes.")
+                .build(),
+
+            Medicine.builder().name("Losartan 50mg").genericName("Losartan Potassium")
+                .brandName("Cozaar").manufacturer("MSD Pharmaceuticals Pvt Ltd")
+                .category("Cardiovascular").dosageForm("Tablet").strength("50mg").packSize("14 Tablets")
+                .prescriptionRequired(true)
+                .composition("Losartan Potassium 50mg")
+                .description("Cozaar (Losartan) is an ARB for hypertension, diabetic nephropathy and heart failure. Also reduces stroke risk in patients with hypertension and left ventricular hypertrophy.")
+                .build(),
+
+            Medicine.builder().name("Nitroglycerin 0.5mg Sublingual").genericName("Glyceryl Trinitrate")
+                .brandName("Nitrostat").manufacturer("Pfizer Ltd")
+                .category("Cardiovascular").dosageForm("Sublingual Tablet").strength("0.5mg").packSize("25 Tablets")
+                .prescriptionRequired(true)
+                .composition("Glyceryl Trinitrate BP 0.5mg")
+                .description("Nitrostat (Nitroglycerin) sublingual tablet provides immediate relief for acute angina attacks. Place under tongue at onset of chest pain. Repeat every 5 minutes up to 3 times.")
+                .build(),
+
+            // ════════════ ANAESTHETICS ════════════
+            Medicine.builder().name("Lignocaine 2% Injection").genericName("Lignocaine Hydrochloride")
+                .brandName("Xylocaine").manufacturer("AstraZeneca India Ltd")
+                .category("Anaesthetics").dosageForm("Injection").strength("2% w/v").packSize("50mL Vial")
+                .prescriptionRequired(true)
+                .composition("Lidocaine Hydrochloride 2% w/v")
+                .description("Xylocaine (Lignocaine) is the most widely used local anaesthetic for dental procedures, minor surgeries, nerve blocks and as a cardiac antiarrhythmic. Essential in every clinic.")
+                .build(),
+
+            // ════════════ VACCINES ════════════
+            Medicine.builder().name("Hepatitis B Vaccine 20mcg").genericName("Hepatitis B Surface Antigen (rDNA)")
+                .brandName("Engerix-B").manufacturer("GlaxoSmithKline Pharmaceuticals Ltd")
+                .category("Vaccines & Biologics").dosageForm("Injection").strength("20mcg/mL").packSize("1mL Vial")
+                .prescriptionRequired(true)
+                .composition("Hepatitis B Surface Antigen (rDNA) 20 mcg per mL, adsorbed on Aluminium hydroxide")
+                .description("Engerix-B is an inactivated recombinant hepatitis B vaccine given as a 3-dose series (0, 1, 6 months). Recommended for all newborns, healthcare workers and high-risk individuals.")
+                .build(),
+
+            Medicine.builder().name("Typhoid Vaccine (Vi Polysaccharide)").genericName("Typhoid Vi Polysaccharide Vaccine")
+                .brandName("Typherix").manufacturer("GlaxoSmithKline Pharmaceuticals Ltd")
+                .category("Vaccines & Biologics").dosageForm("Injection").strength("25mcg/0.5mL").packSize("1 Pre-filled Syringe")
+                .prescriptionRequired(true)
+                .composition("Salmonella typhi Vi polysaccharide antigen 25mcg per 0.5mL dose")
+                .description("Typherix is a single-dose injectable typhoid vaccine for travellers and endemic areas. Provides protection for 3 years. Suitable for persons above 2 years of age.")
                 .build()
         ));
 
@@ -951,9 +1250,13 @@ public class DataSeeder implements CommandLineRunner {
                     case "Vitamins & Supplements", "Gastrointestinal" -> rand.nextInt(100) + 50;
                     case "Cardiovascular", "Anti-Diabetic", "Hormones & Thyroid" -> rand.nextInt(60) + 20;
                     case "Antibiotics", "Antifungal", "Antiviral" -> rand.nextInt(50) + 15;
+                    case "Anti-Tuberculosis", "Anti-Malarial" -> rand.nextInt(30) + 10;
+                    case "Haematology" -> rand.nextInt(40) + 15;
+                    case "Vaccines & Biologics" -> rand.nextInt(20) + 5;
+                    case "Anaesthetics" -> rand.nextInt(15) + 5;
                     case "Respiratory" -> rand.nextInt(40) + 10;
                     case "Dermatology", "Ophthalmology" -> rand.nextInt(30) + 10;
-                    case "Psychiatry & Neurology", "Urology", "Gynaecology" -> rand.nextInt(25) + 8;
+                    case "Psychiatry & Neurology", "Urology", "Gynaecology", "Musculoskeletal" -> rand.nextInt(25) + 8;
                     default -> rand.nextInt(40) + 15;
                 };
 
@@ -1045,6 +1348,43 @@ public class DataSeeder implements CommandLineRunner {
             case "ORS Electral Powder" -> bd(28, rand);
             case "Digene Antacid Gel" -> bd(95, rand);
             case "Gelusil MPS Tablet" -> bd(55, rand);
+            // New medicines
+            case "Penicillin V 500mg" -> bd(45, rand);
+            case "Ampicillin 500mg" -> bd(38, rand);
+            case "Cloxacillin 500mg" -> bd(52, rand);
+            case "Chloramphenicol 250mg" -> bd(42, rand);
+            case "Vancomycin 500mg Injection" -> bd(650, rand);
+            case "Tetracycline 250mg" -> bd(32, rand);
+            case "Erythromycin 500mg" -> bd(68, rand);
+            case "Ceftriaxone 1g Injection" -> bd(120, rand);
+            case "Cefixime 200mg" -> bd(115, rand);
+            case "Levofloxacin 500mg" -> bd(88, rand);
+            case "Meropenem 1g Injection" -> bd(480, rand);
+            case "Rifampicin 450mg" -> bd(185, rand);
+            case "Isoniazid 300mg" -> bd(28, rand);
+            case "Chloroquine 250mg" -> bd(22, rand);
+            case "Hydroxychloroquine 200mg" -> bd(38, rand);
+            case "Artemether + Lumefantrine 20+120mg" -> bd(320, rand);
+            case "Tramadol 50mg" -> bd(55, rand);
+            case "Methotrexate 2.5mg" -> bd(42, rand);
+            case "Colchicine 0.5mg" -> bd(48, rand);
+            case "Allopurinol 100mg" -> bd(35, rand);
+            case "Ferrous Sulphate 200mg" -> bd(28, rand);
+            case "Vitamin B12 Methylcobalamin 1000mcg" -> bd(85, rand);
+            case "Warfarin 5mg" -> bd(62, rand);
+            case "Prednisolone 5mg" -> bd(38, rand);
+            case "Dexamethasone 0.5mg" -> bd(22, rand);
+            case "Glibenclamide 5mg" -> bd(32, rand);
+            case "Phenytoin 100mg" -> bd(45, rand);
+            case "Carbamazepine 200mg" -> bd(58, rand);
+            case "Levodopa + Carbidopa 100+25mg" -> bd(185, rand);
+            case "Digoxin 0.25mg" -> bd(28, rand);
+            case "Furosemide 40mg" -> bd(18, rand);
+            case "Losartan 50mg" -> bd(72, rand);
+            case "Nitroglycerin 0.5mg Sublingual" -> bd(38, rand);
+            case "Lignocaine 2% Injection" -> bd(95, rand);
+            case "Hepatitis B Vaccine 20mcg" -> bd(350, rand);
+            case "Typhoid Vaccine (Vi Polysaccharide)" -> bd(420, rand);
             default -> BigDecimal.valueOf(50 + rand.nextInt(100));
         };
     }
