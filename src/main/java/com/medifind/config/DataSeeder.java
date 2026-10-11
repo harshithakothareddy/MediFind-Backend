@@ -48,8 +48,9 @@ public class DataSeeder implements CommandLineRunner {
     @Transactional
     public void run(String... args) {
         if (pharmacyRepository.count() > 0) {
-            log.info("Database already seeded. Skipping.");
+            log.info("Database already seeded. Ensuring required medicines exist...");
             seedDemoUsers();
+            ensureRequiredMedicines();
             return;
         }
         log.info("Seeding database with real data...");
@@ -75,7 +76,21 @@ public class DataSeeder implements CommandLineRunner {
         ensureDemoPharmacy(pharmacyUser);
         seedDemoUser("user@demo.medifind", "Demo", "Patient", demoUserPassword, Role.USER,
             "9876543212", "500034", 17.4126, 78.4600);
+    }
+
+    private void ensureRequiredMedicines() {
+        if (!medicineRepository.existsByNameIgnoreCase("Metacell")) {
+            medicineRepository.save(Medicine.builder()
+                .name("Metacell").genericName("Metacell Complex")
+                .brandName("Metacell Renewal").manufacturer("SkinCeuticals India")
+                .category("Dermatological").dosageForm("Cream").strength("50ml").packSize("50ml Pump")
+                .prescriptionRequired(false)
+                .composition("Niacinamide 5%, Tripeptide Concentrate 2.5%, Glycerin 15%")
+                .description("Metacell is an advanced cellular renewal emulsion formulated to support skin repair, improve cellular elasticity, and clarify skin texture.")
+                .build());
+            log.info("Ensured required medicine seeded: Metacell");
         }
+    }
 
         private User seedDemoUser(String email, String firstName, String lastName, String password, Role role,
                       String phone, String pincode, double latitude, double longitude) {
@@ -1229,6 +1244,14 @@ public class DataSeeder implements CommandLineRunner {
                 .prescriptionRequired(true)
                 .composition("Salmonella typhi Vi polysaccharide antigen 25mcg per 0.5mL dose")
                 .description("Typherix is a single-dose injectable typhoid vaccine for travellers and endemic areas. Provides protection for 3 years. Suitable for persons above 2 years of age.")
+                .build(),
+
+            Medicine.builder().name("Metacell").genericName("Metacell Complex")
+                .brandName("Metacell Renewal").manufacturer("SkinCeuticals India")
+                .category("Dermatological").dosageForm("Cream").strength("50ml").packSize("50ml Pump")
+                .prescriptionRequired(false)
+                .composition("Niacinamide 5%, Tripeptide Concentrate 2.5%, Glycerin 15%")
+                .description("Metacell is an advanced cellular renewal emulsion formulated to support skin repair, improve cellular elasticity, and clarify skin texture.")
                 .build()
         ));
 

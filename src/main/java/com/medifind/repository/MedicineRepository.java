@@ -33,6 +33,8 @@ public interface MedicineRepository extends JpaRepository<Medicine, Long>, JpaSp
 
     long countByActiveTrue();
 
+    boolean existsByNameIgnoreCase(String name);
+
     @Query("""
         SELECT m FROM Medicine m
         WHERE m.active = true AND (
