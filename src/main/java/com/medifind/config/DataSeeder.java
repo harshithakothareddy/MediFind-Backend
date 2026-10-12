@@ -91,7 +91,7 @@ public class DataSeeder implements CommandLineRunner {
             log.info("Ensured required medicine seeded: Metacell");
         }
         if (!medicineRepository.existsByNameIgnoreCase("Penicillin Tablet")) {
-            Medicine penicillin = medicineRepository.save(Medicine.builder()
+            medicineRepository.save(Medicine.builder()
                 .name("Penicillin Tablet").genericName("Phenoxymethylpenicillin (Penicillin V)")
                 .brandName("Kaypen / Penicillin V").manufacturer("Alkem Laboratories Ltd")
                 .category("Antibiotics").dosageForm("Tablet").strength("500mg").packSize("10 Tablets")
@@ -100,28 +100,6 @@ public class DataSeeder implements CommandLineRunner {
                 .description("Penicillin V is an oral penicillin antibiotic tablet used for bacterial infections, including streptococcal pharyngitis, tonsillitis, dental abscesses, and skin infections.")
                 .build());
             log.info("Ensured required medicine seeded: Penicillin Tablet");
-
-            List<Pharmacy> pharmacies = pharmacyRepository.findAll();
-            if (!pharmacies.isEmpty()) {
-                java.util.Random rand = new java.util.Random(101);
-                for (int i = 0; i < Math.min(6, pharmacies.size()); i++) {
-                    Pharmacy pharmacy = pharmacies.get(i);
-                    if (inventoryRepository.findByPharmacyIdAndMedicineId(pharmacy.getId(), penicillin.getId()).isEmpty()) {
-                        inventoryRepository.save(Inventory.builder()
-                            .pharmacy(pharmacy)
-                            .medicine(penicillin)
-                            .batchNumber("PEN-" + (1000 + rand.nextInt(9000)))
-                            .expiryDate(java.time.LocalDate.now().plusMonths(18))
-                            .stockQuantity(30 + rand.nextInt(40))
-                            .minimumStockLevel(10)
-                            .price(new BigDecimal("45.00"))
-                            .lastUpdatedAt(java.time.LocalDateTime.now())
-                            .dataSource("PHARMACY_VERIFIED")
-                            .dataType("REAL")
-                            .build());
-                    }
-                }
-            }
         }
     }
 
